@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>false</InvariantGlobalization>
+    <UserSecretsId>9ae0fe82-51bd-4195-bbe9-e012910a5800</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Formatters.Xml" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="SoapCore" Version="1.1.0.47" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="System.ServiceModel.Http" Version="8.0.0" />
+    <PackageReference Include="System.ServiceModel.Primitives" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ElevenNoteSOAP.Data\ElevenNoteSOAP.Data.csproj" />
+    <ProjectReference Include="..\ElevenNoteSOAP.Models\ElevenNoteSOAP.Models.csproj" />
+    <ProjectReference Include="..\ElevenNoteSOAP.Services\ElevenNoteSOAP.Services.csproj" />
+  </ItemGroup>
+
+</Project>
